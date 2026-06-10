@@ -72,7 +72,7 @@ jobs:
       - name: Run Trivy Filesystem Scan
         uses: aquasecurity/trivy-action@master
         with:
-          scan-type: filesystem
+          scan-type: 'filesystem'
           scan-ref: .
           format: json
           exit-code: 0
